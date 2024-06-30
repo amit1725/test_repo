@@ -19,7 +19,7 @@ const mongoDB = async () => {
 
     const foodCategory = await mongoose.connection.db
       .collection("foodCategory")
-      .find({})
+      .find({}) 
       .toArray();
     global.FoodCategory = foodCategory;
 
