@@ -4,7 +4,7 @@ const User = require("../models/User");
 // ...rest of the initial code omitted for simplicity.
 const { body, validationResult } = require("express-validator");
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcryptjs");
+const bcrypt = require("bcryptjs"); 
 //below secretkey is made ,this is not known to the user
 const jwtsecret = "mynameissonamkadam";
 router.post(
