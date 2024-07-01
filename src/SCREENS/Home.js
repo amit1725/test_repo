@@ -11,7 +11,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const loadData = async () => {
+  const loadData = async () => { 
     try {
       let response = await fetch("http://localhost:5000/api/foodData", {
         method: "POST",
