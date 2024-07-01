@@ -5,7 +5,7 @@ export default function Login() {
   const [credentials, setcredentials] = useState({
     email: "",
     password: "",
-  });
+  }); 
   let naviagte = useNavigate();
 
   const handleSubmit = async (e) => {
