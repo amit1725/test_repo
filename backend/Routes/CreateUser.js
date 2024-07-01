@@ -6,7 +6,7 @@ const { body, validationResult } = require("express-validator");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs"); 
 //below secretkey is made ,this is not known to the user
-const jwtsecret = "mynameissonamkadam";
+const jwtsecret = "mynameissonamkadam"; 
 router.post(
   "/createuser",
   [
