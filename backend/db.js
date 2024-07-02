@@ -4,7 +4,7 @@ const mongoURL =
   "mongodb+srv://FoodFusion:FoodFusion123@cluster0.n8qwawf.mongodb.net/FoodFusion?retryWrites=true&w=majority&appName=Cluster0";
 
 const mongoDB = async () => {
-  try { 
+  try {  
     await mongoose.connect(mongoURL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
