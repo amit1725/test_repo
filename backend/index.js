@@ -4,7 +4,7 @@ const cors = require("cors");
 const port = 5000;
 const mongoDB = require("./db");
 
-mongoDB();
+mongoDB(); 
 
 app.use(
   cors({
