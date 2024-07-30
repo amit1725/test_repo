@@ -5,10 +5,7 @@ const mongoURL =
  
 const mongoDB = async () => {
   try {  
-    await mongoose.connect(mongoURL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(mongoURL);
     console.log("Connected Successfully!!!");
 
     const fetched_data = await mongoose.connection.db

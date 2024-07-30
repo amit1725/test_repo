@@ -1,5 +1,5 @@
 import React from "react";
-import Delete from "@mui/icons-material/Delete";
+import { Trash } from 'lucide-react';
 import { useCart, useDispatchCart } from "../components/ContextReducer";
 
 export default function Cart() {
@@ -76,7 +76,7 @@ export default function Cart() {
                 </td>
                 <td>
                   <button type="button" className="btn p-0">
-                    <Delete
+                    <Trash
                       onClick={() => {
                         dispatch({ type: "REMOVE", index: index });
                       }}
